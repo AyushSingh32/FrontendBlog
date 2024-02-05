@@ -1,45 +1,44 @@
-<div class="ab" style="background-image: url(./assets/c.jpg);">
-  <div class="registration-container" >
-    <h2 style="color: white;">Registration</h2>
+<div class="unique-container" style="background-image: url(./assets/14.jpg);">
+  <div class="unique-registration-container">
+    <h2 style="color: #f50505;">Registration</h2>
     
     <form (ngSubmit)="onSubmit(registrationForm.value)" #registrationForm="ngForm">
-      <div class="form-group">
-        <label for="firstName">First Name:</label>
+      <div class="unique-form-group">
+        <label for="firstName" style="color: #eb1414:">First Name</label>
         <input type="text" id="fName" placeholder="Enter First Name..." name="fName" [(ngModel)]="reg.fName" required>
       </div>
       
-      <div class="form-group">
-        <label for="lastName">Last Name:</label>
+      <div class="unique-form-group">
+        <label for="lastName" style="color: #2a187a;">Last Name:</label>
         <input type="text" id="lName" placeholder="Enter Last Name..." name="lName" [(ngModel)]="reg.lName" required>
       </div>
   
          
-      <div class="form-group">
-        <label for="username">Username:</label>
+      <div class="unique-form-group">
+        <label for="username" style="color: #0a7031;">Username:</label>
         <input type="text" id="username" placeholder="Enter Username..." name="username" [(ngModel)]="reg.username" required>
       </div>
   
-      <div class="form-group">
-        <label for="email">Email:</label>
+      <div class="unique-form-group">
+        <label for="email" style="color: #ECF0F1;">Email:</label>
         <input type="email" id="email" placeholder="Enter Email..." name="email" [(ngModel)]="reg.email" required>
       </div>
       
-      <div class="form-group">
-        <label for="password">Password:</label>
+      <div class="unique-form-group">
+        <label for="password" style="color: #ECF0F1;">Password:</label>
         <input type="password" id="password" placeholder="Enter Password..." name="password" [(ngModel)]="reg.password" required>
       </div>
       
-      <div class="form-group">
-        <label for="confirmPassword">Confirm Password:</label>
+      <div class="unique-form-group">
+        <label for="confirmPassword" style="color: #ECF0F1;">Confirm Password:</label>
         <input type="password" id="cnfrmPassword" placeholder="Enter Confirm Password..." name="cnfrmPassword" [(ngModel)]="reg.cnfrmPassword" required>
       </div>
       
-      <div class="error-message" *ngIf="registrationForm.invalid && (registrationForm.dirty || registrationForm.touched)">
+      <div class="unique-error-message" *ngIf="registrationForm.invalid && (registrationForm.dirty || registrationForm.touched)">
         Please fill out all the required fields and ensure passwords match.
       </div>
       
-      <button type="submit" [disabled]="registrationForm.invalid">Register</button>
+      <button type="submit" [disabled]="registrationForm.invalid" style="background-color: #3498DB; color: #fff; padding: 12px; border: none; border-radius: 4px; cursor: pointer;">Register</button>
     </form>
   </div>
-  </div>
-  
+</div>

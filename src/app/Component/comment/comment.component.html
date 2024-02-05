@@ -1,24 +1,24 @@
-<div class="ab" style="background-image: url(./assets/d.jpg);">
-<div class="comments-container">
-    <h3 style="color: white;">Comments</h3>
-    <div *ngFor="let com of comm" class="comment-item" style="color: white;">
-        <strong><h5><b>Name:</b> {{ com.name }}  </h5></strong>
-        <strong><h5><b>Comment:</b> {{ com.comment }} </h5></strong>
-    <p>{{ com.text }}</p>
+<div class="ab" style="background-image: url(./assets/12.jpg);">
+  <div class="comments-container" style="background-color: #34495E; padding: 25px; border-radius: 15px;">
+    <h3 style="color: #3498DB;">Comments</h3>
+    <div *ngFor="let com of comm" class="comment-item" style="color: #ECF0F1;">
+      <strong><h5><b>Name:</b> {{ com.name }} </h5></strong>
+      <strong><h5><b>Comment:</b> {{ com.comment }} </h5></strong>
+      <p>{{ com.text }}</p>
     </div>
     <div class="add-comment">
-    <h4 style="color: white;">Add a Comment</h4>
-    <form>
-    <div class="form-group">
-    <label for="author" style="color: white;">Name</label>
-    <input type="text" id="name" name="name" [(ngModel)]="comme.name" required>
+      <h4 style="color: #3498DB;">Add a Comment</h4>
+      <form>
+        <div class="form-group">
+          <label for="author" style="color: #ECF0F1;">Name</label>
+          <input type="text" id="name" name="name" [(ngModel)]="comme.name" required>
+        </div>
+        <div class="form-group">
+          <label for="commentText" style="color: #ECF0F1;">Comment</label>
+          <textarea (blur)="onChangeFileField($event)" id="commentText" name="commentText" [(ngModel)]="comme.comment" required></textarea>
+        </div>
+        <button type="submit" (click)="addComm()" style="background-color: #E74C3C; color: #fff; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer;">Submit Comment</button>
+      </form>
     </div>
-    <div class="form-group">
-    <label for="commentText" style="color: white;">Comment</label>
-    <textarea (blur)=" onChangeFileField($event)" id="commentText" name="commentText" [(ngModel)]="comme.comment" required></textarea>
-    </div>
-    <button type="submit" (click)="addComm()">Submit Comment</button>
-    </form>
-    </div>
-    </div>
-    </div>
+  </div>
+</div>

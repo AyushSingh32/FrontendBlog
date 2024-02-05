@@ -1,53 +1,82 @@
-/* .a{
-  
-  background-color: red;
-} */
-.container {
-    margin: 100px 10px;
-    padding: 10px 10px;
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+}
 
-    border-radius: 5px;
-    text-align: center;
-  }
-  .news-container {
-    display: inline-flex;
-  }
- 
-  .news-card {
-    width: 500px;
-    height: 400px;
-    margin: 10px 10px;
-    border-radius: 10px;
-    background-color: #f8f9f9;
-    border: 5px solid black;
-  }
-  .course-card {
-    width: 220px;
-    height: 320px;
-    margin: 10px 10px;
-    background-color: #f8f9f9;
-    border: 3px solid black;
-  }
- 
-  .news-buttons {
-    display: flex;
-    justify-content: center;
-  }
-  .btn {
-    width: 200px;
-    height: 40px;
-    border: none;
-    margin: 5px 3px;
-  }
- 
-  .btn-read {
-    background-color: #ec7063;
-  }
-  .btn-detail {
-    background-color: #abebc6;
-  }
-  h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 4 rem;
-    font-weight: 600;
-  }
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* News Section */
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.news-card {
+  width: 480px;
+  height: 380px;
+  margin: 20px;
+  background-color: #3498DB;
+  border: 5px solid #2ECC71;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Course Section */
+.course-card {
+  width: 240px;
+  height: 340px;
+  margin: 20px;
+  background-color: #3498DB;
+  border: 4px solid #2ECC71;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.btn {
+  width: 220px;
+  height: 40px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-read {
+  background-color: #E74C3C;
+  color: #fff;
+}
+
+.btn-read:hover {
+  background-color: #C0392B;
+}
+
+.btn-detail {
+  background-color: #58D68D;
+  color: #fff;
+}
+
+.btn-detail:hover {
+  background-color: #27AE60;
+}
+
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+}
